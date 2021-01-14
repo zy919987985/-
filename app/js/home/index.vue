@@ -1,17 +1,17 @@
 <template lang="html">
-    <div :class="$style.home">
-        <h1>Home</h1>
+    <div>
+        <Heador/>
+        <Hswiper/>
     </div>
 </template>
 
 <script>
-export default {}
-</script>
-
-<style lang="scss" module>
-@import '../../css/reset.scss';
-.home {
-  color: red;
-  font-size: 80px;
+import Heador from "../public/header.vue"
+import Hswiper from "../home/hswiper.vue"
+export default {
+    components: {
+        Heador,
+        Hswiper,
+    },
 }
-</style>
+</script>

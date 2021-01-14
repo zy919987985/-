@@ -48,6 +48,7 @@
       "window": false
     },
     "rules": {
+      "linebreak-style": [0,"error", "windows"],
       "node/no-extraneous-import": "error",
       "node/no-missing-import": "error",
       "node/no-unpublished-import": "error",
@@ -55,7 +56,16 @@
         "error",
         4
       ],
-      "vue/max-attributes-per-line": "off"
+      "vue/max-attributes-per-line": "off",
+      "vue/html-self-closing": ["error", {
+        "html": {
+            "void": "never",
+            "normal": "any",
+            "component": "any"
+        },
+        "svg": "always",
+        "math": "always"
+    }]
     }
   },
   "eslintIgnore": [
