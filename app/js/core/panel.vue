@@ -1,12 +1,11 @@
-<template>
-    <setion :class="[panelClass,cname]">
-        <h4>--{{ title }}--</h4>
+<template lang="html">
+    <section :class="[panelClass,cname]">
+        <h4>-{{ title }}-</h4>
         <slot/>
-    </setion>
+    </section>
 </template>
 
 <script>
-
 export default {
     props: {
         cname: {
@@ -23,13 +22,12 @@ export default {
             panelClass: "panel",
         }
     },
-    methods: {},
 }
-
 </script>
-<style lang='scss' scoped>
-@import "../../css/elemnt.scss";
-.panel{
+
+<style lang="scss">
+  @import "../../css/element.scss";
+  .panel{
     @include panel;
-}
+  }
 </style>

@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss" module>
-@import "../../css/elemnt.scss";
+@import "../../css/element.scss";
 .slider{
     margin-top: 120px;
     img{
